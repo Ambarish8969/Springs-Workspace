@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+    
+    <!-- values as element -->
+    <bean name="student1" class="com.jsp.package1.Student">
+    	<property name="name"><value>Amibka</value></property>
+    	<property name="id"><value>101</value></property>
+    	<property name="marks"><value>99</value></property>
+    </bean>
+
+	<!-- values as attribute -->
+	<bean name="student2" class="com.jsp.package1.Student">
+		<property name="name" value="Ambarish" /> <!-- we can write property line like this also -->
+		<property name="id" value="102"></property>
+		<property name="marks" value="89" />
+	</bean>
+	<!-- value as p-schema -->
+	<bean name="student3" class="com.jsp.package1.Student"
+	 p:name="Pavan" p:id="103" p:marks="79">
+		
+	</bean>
+</beans>
