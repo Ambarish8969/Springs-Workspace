@@ -1,0 +1,9 @@
+package com.valueasattribute;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainClass {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext c1=new ClassPathXmlApplicationContext();
+	}
+}

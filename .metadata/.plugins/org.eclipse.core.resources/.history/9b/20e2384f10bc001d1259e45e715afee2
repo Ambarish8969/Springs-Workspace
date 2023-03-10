@@ -1,0 +1,6 @@
+package com.jsp.mavenproject1;
+
+public class Student {
+	int id;
+	String name;
+}

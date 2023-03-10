@@ -1,0 +1,9 @@
+package com.jsp.mavenproject1;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class TestMain {
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext c1=new ClassPathXmlApplicationContext();
+	}
+}
