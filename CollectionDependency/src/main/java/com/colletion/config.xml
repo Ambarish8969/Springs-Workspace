@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Configuring the XML file -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="companyList" class="com.colletion.Company"
+		p:companyName="mindtree" p:companyLocation="Banglore">
+		<property name="employees">
+			<list>
+				<value>employee1</value>
+				<value>employee2</value>
+				<value>employee3</value>
+				<value>employee4</value>
+			</list>
+		</property>
+	</bean>
+	<bean name="companySet" class="com.colletion.Company"
+		p:companyName="capgemini" p:companyLocation="Banglore">
+		<property name="employees">
+			<set>
+				<value>Ambika</value>
+				<value>Shreya</value>
+				<value>Nitish</value>
+				<value>Ambarish</value>
+			</set>
+		</property>
+	</bean>
+	
+</beans>

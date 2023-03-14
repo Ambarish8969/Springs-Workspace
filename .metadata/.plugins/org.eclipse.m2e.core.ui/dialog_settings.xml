@@ -59,6 +59,7 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.collection"/>
 			<item value="com.dependencices"/>
 			<item value="com.jsp.employee"/>
 			<item value="com.jsp"/>
@@ -66,6 +67,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="CollectionDependency"/>
 			<item value="PremitiveDependencies"/>
 			<item value="EmployeeMaven"/>
 			<item value="mavenproject1"/>
