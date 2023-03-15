@@ -14,6 +14,8 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="F:\Springs Workspace\CollectionDependency\src\main\java\com\hasIs\MainClass.java"/>
+			<item value="F:\Springs Workspace\CollectionDependency\src\main\java"/>
 			<item value="F:\Springs Workspace\EmployeeMaven\src\main\java\com\valueasattribute\config.xml"/>
 			<item value="F:\Springs Workspace\EmployeeMaven"/>
 			<item value="F:\Springs Workspace\EmployeeMaven\src\main\java\com\jsp\employeemaven\config.xml"/>
@@ -59,18 +61,12 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.collection"/>
-			<item value="com.dependencices"/>
-			<item value="com.jsp.employee"/>
-			<item value="com.jsp"/>
+			<item value="com.constructorInjection"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="CollectionDependency"/>
-			<item value="PremitiveDependencies"/>
-			<item value="EmployeeMaven"/>
-			<item value="mavenproject1"/>
+			<item value="ConstructorInjection"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

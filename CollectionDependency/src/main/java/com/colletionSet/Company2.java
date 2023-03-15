@@ -1,6 +1,5 @@
 package com.colletionSet;
 
-import java.util.List;
 import java.util.Set;
 
 public class Company2 {

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Configuring the XML file -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="country" class="com.collectionMap.Country"
+		p:countryName="India">
+		<property name="stateAndLanguage">
+			<map>
+				<!-- First way to write key and value -->
+				<entry>
+					<key>
+						<value>Karnataka</value>
+					</key>
+					<value>Kannada</value>
+				</entry>
+				<entry>
+					<key>
+						<value>Maharashtra</value>
+					</key>
+					<value>Marathi</value>
+				</entry>
+				<!-- Second way to write key and value -->
+				<entry key="AndraPradesh">
+					<value>Telugu</value>
+				</entry>
+				<!-- Third way to write key and value -->
+				<entry key="Kerala" value="Malayalam"></entry>
+			</map>
+		</property>
+	</bean>
+
+</beans>
