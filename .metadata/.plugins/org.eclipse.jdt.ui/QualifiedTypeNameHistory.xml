@@ -2,5 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="DependencyInversion.Transaction"/>
     <fullyQualifiedTypeName name="DependencyInversion.Service"/>
+    <fullyQualifiedTypeName name="referenceInjection.Companuy"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 </qualifiedTypeNameHistroy>

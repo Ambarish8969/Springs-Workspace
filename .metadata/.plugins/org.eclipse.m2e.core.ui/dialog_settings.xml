@@ -14,6 +14,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="F:\Springs Workspace\ConstructorInjection\src\main\java\com\mapInjection\config.xml"/>
 			<item value="F:\Springs Workspace\CollectionDependency\src\main\java\com\hasIs\MainClass.java"/>
 			<item value="F:\Springs Workspace\CollectionDependency\src\main\java"/>
 			<item value="F:\Springs Workspace\EmployeeMaven\src\main\java\com\valueasattribute\config.xml"/>
@@ -61,12 +62,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.constructorInjection"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="ConstructorInjection"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
