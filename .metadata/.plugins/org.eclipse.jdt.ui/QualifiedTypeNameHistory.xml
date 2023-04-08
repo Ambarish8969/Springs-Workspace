@@ -3,5 +3,9 @@
     <fullyQualifiedTypeName name="DependencyInversion.Transaction"/>
     <fullyQualifiedTypeName name="DependencyInversion.Service"/>
     <fullyQualifiedTypeName name="referenceInjection.Companuy"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
     <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
 </qualifiedTypeNameHistroy>

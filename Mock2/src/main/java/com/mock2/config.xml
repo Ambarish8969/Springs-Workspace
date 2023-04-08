@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="bike1" class="com.mock2.Bike">
+		<property name="bikeId" value="101"></property>
+		<property name="bikeName" value="Hero"></property>
+	</bean>
+	
+	<bean name="car1" class="com.mock2.Car">
+		<property name="carId" value="1001"></property>
+		<property name="carName" value="Hundai"></property>
+	</bean>
+	
+	<bean name="vehicle1" class="com.mock2.Vehicle">
+		<property name="vehicleType" value="car"></property>
+		<property name="vahicleDetails">
+			<map>
+				<entry key="Hundai" value="18lakh"></entry>
+				<entry key="Honda" value="20lakh"></entry>
+				<entry key="Nano" value="5lakh"></entry>
+			</map>
+		</property>
+		<property name="vehicleType" value="bike"></property>
+		<property name="vahicleDetails">
+			<map>
+				<entry key="Hero" value="68K"></entry>
+				<entry key="Honda" value="20K"></entry>
+				<entry key="Bajaj" value="50K"></entry>
+			</map>
+		</property>
+	</bean>
+</beans>

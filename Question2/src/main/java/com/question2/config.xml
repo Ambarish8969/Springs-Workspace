@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- 1st way -->
+	<bean name="college" class="com.question2.College">
+		<property name="collegeName" value="KLE"></property>
+		<property name="location" value="Chikodi"></property>
+		<property name="branch">
+			<list>
+				<bean name="branch1" class="com.question2.Branch"
+					p:branchId="101" p:branchName="Jayanagar">
+					<property name="student">
+						<list>
+							<bean name="student1" class="com.question2.Student"
+								p:studentId="1" p:studentName="Ambarish" p:marks="99" />
+							<bean name="student2" class="com.question2.Student"
+								p:studentId="2" p:studentName="Ambika" p:marks="89" />
+							<bean name="student3" class="com.question2.Student"
+								p:studentId="3" p:studentName="Rakesh" p:marks="69" />
+						</list>
+					</property>
+				</bean>
+				<bean name="branch2" class="com.question2.Branch"
+					p:branchId="102" p:branchName="Basavanagudi">
+					<property name="student">
+						<list>
+							<bean name="student4" class="com.question2.Student"
+								p:studentId="1" p:studentName="Ambarish" p:marks="99" />
+							<bean name="student5" class="com.question2.Student"
+								p:studentId="2" p:studentName="Ambika" p:marks="89" />
+							<bean name="student6" class="com.question2.Student"
+								p:studentId="3" p:studentName="Rakesh" p:marks="69" />
+						</list>
+					</property>
+				</bean>
+				<bean name="branch3" class="com.question2.Branch"
+					p:branchId="103" p:branchName="JP Nagar">
+					<property name="student">
+						<list>
+							<bean name="student7" class="com.question2.Student"
+								p:studentId="1" p:studentName="Ambarish" p:marks="99" />
+							<bean name="student8" class="com.question2.Student"
+								p:studentId="2" p:studentName="Ambika" p:marks="89" />
+							<bean name="student9" class="com.question2.Student"
+								p:studentId="3" p:studentName="Rakesh" p:marks="69" />
+						</list>
+					</property>
+				</bean>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- 2nd way -->
+	<bean name="college" class="com.question2.College"
+		p:collegeName="KLE" p:location="Bengaluru">
+		<property name="branch">
+			<list>
+				<ref bean="branch1"></ref>
+				<ref bean="branch2"></ref>
+				<ref bean="branch3"></ref>
+			</list>
+		</property>
+	</bean>
+	<bean name="branch1" class="com.question2.Branch" p:branchId="101"
+		p:branchName="Jayanagar">
+		<property name="student">
+			<list>
+				<ref bean="student1"></ref>
+				<ref bean="student2"></ref>
+				<ref bean="student3"></ref>
+			</list>
+		</property>
+	</bean>
+	<bean name="branch2" class="com.question2.Branch" p:branchId="102"
+		p:branchName="Basavagudi">
+		<property name="student">
+			<list>
+				<ref bean="student1"></ref>
+				<ref bean="student2"></ref>
+				<ref bean="student3"></ref>
+			</list>
+		</property>
+	</bean>
+	<bean name="branch3" class="com.question2.Branch" p:branchId="103"
+		p:branchName="JP Nagar">
+		<property name="student">
+			<list>
+				<ref bean="student1"></ref>
+				<ref bean="student2"></ref>
+				<ref bean="student3"></ref>
+			</list>
+		</property>
+	</bean>
+	<bean name="student1" class="com.question2.Student"
+		p:studentId="1" p:studentName="Ambarish" p:marks="99"></bean>
+	<bean name="student2" class="com.question2.Student"
+		p:studentId="2" p:studentName="Ambika" p:marks="89"></bean>
+	<bean name="student3" class="com.question2.Student"
+		p:studentId="3" p:studentName="Rakesh" p:marks="69"></bean>
+</beans>

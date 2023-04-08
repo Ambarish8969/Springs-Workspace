@@ -1,0 +1,28 @@
+package com.mock2;
+
+public class Bike {
+	private int bikeId;
+	private String bikeName;
+
+	public int getBikeId() {
+		return bikeId;
+	}
+
+	public void setBikeId(int bikeId) {
+		this.bikeId = bikeId;
+	}
+
+	public String getBikeName() {
+		return bikeName;
+	}
+
+	public void setBikeName(String bikeName) {
+		this.bikeName = bikeName;
+	}
+
+	@Override
+	public String toString() {
+		return "Bike [bikeId=" + bikeId + ", bikeName=" + bikeName + "]";
+	}
+
+}
