@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean class="com.in.Customer" name="cust1" c:customerid="1"
+		c:customername="kb" c:phno="8197908945" />
+
+	<bean class="com.in.Customer" name="cust2" c:customerid="2"
+		c:customername="bk" c:phno="8189908945" />
+	<bean class="com.in.Customer" name="cust3" c:customerid="3"
+		c:customername="dk" c:phno="8197898945" />
+	<bean class="com.in.Customer" name="cust4" c:customerid="4"
+		c:customername="jk" c:phno="6397908945" />
+	<bean class="com.in.Customer" name="cust5" c:customerid="5"
+		c:customername="kd" c:phno="7997908945" />
+
+	<bean class="com.in.Provisionstore" name="provi1"
+		c:storename="urs" c:location="banglore">
+		<constructor-arg>
+			<list>
+				<ref bean="cust1" />
+				<ref bean="cust2" />
+				<ref bean="cust3" />
+				<ref bean="cust4" />
+				<ref bean="cust5" />
+			</list>
+		</constructor-arg>
+	</bean>
+
+	<bean class="com.in.Provisionstore" name="provi2"
+		c:storename="mine" c:location="banglore">
+		<constructor-arg>
+			<list>
+				<ref bean="cust1" />
+				<ref bean="cust2" />
+				<ref bean="cust3" />
+				<ref bean="cust4" />
+				<ref bean="cust5" />
+			</list>
+		</constructor-arg>
+	</bean>
+	
+	<bean class="com.in.Branch" name="branch" c:location="banglore">
+	<constructor-arg>
+	<list>
+	<ref bean="provi1"/>
+	<ref bean="provi2"/>
+	</list>
+	</constructor-arg>
+	</bean>
+
+</beans>
